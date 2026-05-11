@@ -9,7 +9,7 @@
     ],
     "configure": [],
     "build": [
-        "make {{THREADS}} STRIP=true"
+        "make -j{{THREADS}} STRIP=true"
     ],
     "install": [
         "make install PREFIX=/usr"
