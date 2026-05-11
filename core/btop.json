@@ -7,7 +7,7 @@
     "prepare": [
         "sed -i 's/ -O2/ /g' Makefile"
     ],
-    "configure": [],
+    "configure": [./configure --prefix=/usr],
     "build": [
         "make -j{{THREADS}} STRIP=true"
     ],
